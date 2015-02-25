@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Programación estructurada</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="Shortcut Icon" href="img/icon.ico"> 
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="container">
+        <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+           <h1 class="texto tamtext1">Programación Estructurada</h1>
+           <h5 class="texto tamtext2">Versión Síntetica</h5>
+         </div>
+         <div class="hidden-xs col-sm-6 col-md-4 col-lg-3 centrar">
+           <a href="#"><img  height="130px" weidht="130px" src="img/uam.gif" alt=""></a>                      
+         </div>
+        </div>
+        </div>
+        </header>
+
+        <nav class="navbar navbar-default colornav">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <sanp class="sr-only">Cambiar navegacion</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">Inicio</a></div>
+          
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="algoritmos.html">Algoritmos</a></il>
+              <li><a href="control.html">Instrucciones de control</a></il>
+              <li><a href="funciones.html">Funciones</a></il>            
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recursos<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                   <li><a href="biblio.html">Bibliográficos</a></li>
+                   <li><a href="online.html">Online</a></li>                                    
+                 </ul>
+              </li>              
+            </ul>
+            
+          </div>
+        </nav>
+        <br>
+        
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <h3>Estructuras de control</h3><hr>
+              <p align="justify">
+              Las estructuras de control determinan la secuencia en que deben ejecutarse las instrucciones de un algoritmo.
+              <br>
+              <ol>
+              <li>Secuencial</li>
+              <br>
+              <p align="justify">Permite que las instrucciones que la constituyen se ejecuten una tras otra en el orden en que se listan</p>            
+              <br>    
+              <li>Estructura condicional</li>
+              <br>
+              <p align="justify"></p>
+              <br>
+                  <ul>
+                  <li>Bifurcacion condicional (if...else)</li><br>
+                  <p align="justify">Se la podría llamar la estructura "si...si no", es decir, "si se cumple la condición, haz esto, y si no, haz esto otro"</p>
+                  <br>
+                  <li>Estrucutra condicional por casos (switch...case)</li><br>   
+                  <p align="justify">La estructura condicional switch ... case se utiliza cuando queremos evitarnos las llamadas escaleras de decisiones. La estructura if nos puede proporcionar, únicamente, dos resultados, uno para verdadero y otro para falso. Una estructura switch ... case, por su parte, nos permite elegir entre muchas opciones.</p>
+                  <br>
+                  </ul>                  
+              <br>
+              <li>Bucles</li>
+              <br>
+              <p align="justify">Tambien llamados ciclos son aquellos que nos permiten ejecutar varias veces una acción.<br>
+              Estos deben de evaluar una condicion, además de tener un contador que nos permita saber cuando terminarán si es que lo hacen.
+              </p>
+              <br>
+                  <ul>
+                  <li>While</li><br>
+                  <p align="justify">El bucle while (mientras) sirve para ejecutar código reiteradas veces. Consta de una evaluación condicional para saber si se seguira ejecutando y en su cuerpo debe de tener un contador o acumulador que nos indique el incremento o decremento.</p>
+                  <br>
+                  <li>Do-While</li><br>
+                  <p align="justify">El bucle do...while (hacer-mientras) es un bucle que, por lo menos, se ejecuta una vez. Consta de un 'hacer' que ejecuta la serie de instrucciones una vez, debe de contener en su cuerpo un acumulador o contador que nos indique el incremento o decremento; y finalmente tiene una condicion que evalua si el ciclio deberá seguir ejecutnadose o no.</p>
+                  <br>
+                  <li>For</li><br>
+                  <p align="justify">El bucle for (desde) es un bucle muy flexible y a la vez muy potente ya que tiene varias formas interesantes de implementarlo.<br>Consta de:<br>
+                  <b>Inicialización:</b> en esta parte se inicia la variable que controla el bucle y es la primera sentencia que ejecuta el bucle. Sólo se ejecuta una vez ya que solo se necesita al principio del bucle.
+                  <br>
+<b>Expresión condicional:</b> al igual que en el bucle while, esta expresión determina si el bucle continuará ejecutándose o no.
+                  <br>
+<b>Incremento:</b> es una sentencia que ejecuta al final de cada iteración del bucle. Por lo general, se utiliza para incrementar la variable con que se inicio el ciclo. Luego de ejecutar el incremento, el bucle revisa nuevamente la condición, si es verdadera tiene lugar una ejecución más del cuerpo del ciclo, si es falsa se termina el ciclo y así.
+                  </p>
+                  <br>  
+                  </ul>                  
+              <br>
+              <li>Sentencia goto</li>
+              <br>
+              <p align="justify">La sentencia goto sirve para indicar al programa que continue ejecutándose desde la línea de código indicada.</p>
+              <br>
+              </ol>
+              </p>
+              <h3>Operadores de comparación</h3><hr>              
+              <p align="justify">
+              Estos nos sirven para establecer la evaluacion de una condición.                
+              </p>
+              <br>
+            <div align="center">
+ 
+            <table width="80%" border="1">
+            
+            <tr>
+              <td><p align="center">Nombre del operador</p></td>
+              <td><p align="center">Sintaxis</p></td>
+            </tr>
+            <tr>
+              <td><p align="center">Menor que</p></td>
+              <td><p align="center">></p></td>
+            </tr>   
+            <tr>              
+              <td><p align="center">Menor o igual que</p></td>
+              <td><p align="center">>=</p></td>
+            </tr>   
+            <tr>  
+              <td><p align="center">Mayor que</p></td>
+              <td><p align="center"><</p></td>
+            </tr>   
+            <tr>  
+              <td><p align="center">Mayor o igual que</p></td>
+              <td><p align="center"><=</p></td>
+            </tr>   
+            <tr>  
+              <td><p align="center">Distinto de</p></td>
+              <td><p align="center">!=</p></td>
+            </tr>   
+            <tr>  
+              <td><p align="center">Igual que</p></td>
+              <td><p align="center">==</p></td>
+            </tr>   
+            <tr>  
+              <td><p align="center">Negación lógica</p></td>
+              <td><p align="center">!a</p></td>
+            </tr>   
+            <tr>  
+              <td><p align="center">AND lógico</p></td>
+              <td><p align="center">a && b</p></td>
+            <tr>  
+              <td><p align="center">OR lógico</p></td>
+              <td><p align="center">a || b</p></td>
+            </tr> 
+            </table>
+              </div>
+              <br>
+            </div>
+
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">        
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+            <pre>
+            if (condición) {
+                           sentencias_si_verdadero;
+                           }
+            else {
+            sentencias_si_falso;
+                 }
+            </pre>
+            <p align="center">Estructura general de la bifurcación condicional</p>            
+            <br>
+            <pre>
+            switch(variable_opcion){
+                                     case 1:
+                                            sentencias;
+                                            break;
+                                     case 2:
+                                            sentencias;
+                                            break;
+                                     case 3:
+                                            sentencias;
+                                            break;
+                                     default:
+                                             sentencias;                                                          
+                                   }
+            </pre>
+            <p align="center">Estructura general de la estructura condicional por casos</p>
+            <br>
+            <pre>
+            while (/*condicion*/) {
+                                   /* Código */
+            <b>Aumento o decremento de la variable de iteración.</b>
+                                  }
+            </pre>
+            <p align="center">Estructura general del ciclo while</p>            
+            <br>
+            <pre>
+            do{
+                /* Código */
+                <b>Aumento o decremento de la variable de iteración.</b>
+              } while(/*condicion*/);
+            </pre>
+            <p align="center">Estructura general del ciclo do-while</p>            
+            <br> 
+            <pre>
+                 for (/*inicialización*/; /*condición*/; /*incremento*/) {
+                  /* código a ejecutar */
+                  }
+            </pre>
+            <p align="center">Estructura general del ciclo for</p>            
+            <br><br><br><br>           
+            <br><br><br><br>            
+            <pre>
+            /* Código */
+            ETIQUETA:
+            /* Código */
+            goto ETIQUETA;
+            /* Código */
+            </pre>
+            <p align="center">Estructura general del goto</p>            
+            <br>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <footer class="footercolor">
+        <div class="container"><br>
+            <img src="img/logo.png" width="75" height="50" alt="Logo" /> | © Todos los derechos reservados.        
+                      
+          </br></div>
+        </footer>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="jQuery2.1.js"></script>
+        <script>
+        $(document).on('ready',function(){
+     
+        });
+
+        </script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

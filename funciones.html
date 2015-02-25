@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Programación estructurada</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="Shortcut Icon" href="img/icon.ico"> 
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div class="container">
+        <div class="row">
+         <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+           <h1 class="texto tamtext1">Programación Estructurada</h1>
+           <h5 class="texto tamtext2">Versión Síntetica</h5>
+         </div>
+         <div class="hidden-xs col-sm-6 col-md-4 col-lg-3 centrar">
+           <a href="#"><img  height="130px" weidht="130px" src="img/uam.gif" alt=""></a>                      
+         </div>
+        </div>
+        </div>
+        </header>
+
+        <nav class="navbar navbar-default colornav">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <sanp class="sr-only">Cambiar navegacion</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">Inicio</a></div>
+          
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="algoritmos.html">Algoritmos</a></il>
+              <li><a href="control.html">Instrucciones de control</a></il>
+              <li><a href="funciones.html">Funciones</a></il>            
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Recursos<b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                   <li><a href="biblio.html">Bibliográficos</a></li>
+                   <li><a href="online.html">Online</a></li>                                    
+                 </ul>
+              </li>              
+            </ul>
+            
+          </div>
+        </nav>
+        <br>
+        
+       <div class="container">            
+                <div class="row">
+                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                
+                  <p align="left">
+                    <h3>Funciones en C</h3><hr> 
+                  </p>                
+                  <div class="btn-group" data-toggle="buttons">
+                    <button type="button" class="btn btn-primary" id="option1">Introducción</button>
+                    <button type="button" class="btn btn-primary" id="option2">Definidas por el usuario</button>
+                    
+                    <div class="prueba"></div>
+                  </div></div></div></div>
+       
+        <div id="pcc">
+                    <div class="container">            
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                                            
+                           <p align="justify">
+                             <h3>Reseña: </h3><hr> 
+                           </p>
+                           <br>                           
+                           <h4>
+                           <p align="justify">
+                           La mayoria de los programas de cómputo que resuelven problemas reales son mucho más grandes que los programas que hasta ahora se han hecho.
+                           <br> 
+                           La mejor manera de desarrollar y mantener un programa grande es construirlo a partir de piezas pequeñas o módulos, los cuáles son más manejables que el programa original. Es decir tenemeos que aplicar la tecnica del divide y vencerás.
+                           </p>
+                           <br> 
+                           <br>                      
+                           <h3>Módulos de programa en C</h3><hr> 
+                           <p align="justify">
+                           A los módulos en C se les llama funciones. Por lo general los programas en C se escriben combinando nuevas funciones que escribe el programador con funciones 'preempacadas' disponibles en la biblioteca estándar de C.
+                           </p>
+                           <br>
+                           <br>
+                           <h3>Funciones preempacadas </h3><hr> 
+                           <p align="justify">
+                           La biblioteca estandar de C proporciona un rica coleccion de funciones para realizar cálculos matemáticos comunes, manipulación de cadenas, manipulación de caracteres, etc. 
+                           
+                           Las funciones de biblioteca se declaran en lo que se conocen como ficheros de cabecera
+o ficheros .h (del inglés headers, cabeceras).<br>  Cuando deseamos utilizar alguna de
+las funciones de biblioteca, debemos especificar el fichero .h en que se encuentra declarada
+la función, al inicio de nuestro programa.<br>  Por ejemplo, si deseamos utilizar la función
+printf en nuestro programa, debemos incluir el fichero stdio.h que contiene el prototipo
+de esta función.                          
+                           </p> 
+                           </h4>                                        
+                                                      
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> 
+                    <div align="center">  
+                    <br><br><br>
+                    <br><br><br>
+                    <br><br><br>
+                    <br><br><br>
+                    <br><br><br>                              
+                    <img height="200px" width="600px" src="img/img5.jpg">
+                    <p align="center">Estructura general de una función</p>
+                    <br>
+                    <br>
+                    <img height="500px" width="400px" src="img/img6.jpg">
+                    <p align="center">Ejemplos de funciónes de Math.h</p>
+                    </div>
+                    </div>
+
+<div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                           <button type="button" class="btn btn-warning" id="esconder">Volver arriba</button>
+              </div>
+            </div>
+          </div>
+
+                  </div>
+                </div>  
+              </div>          
+
+
+            <div id="dbu">
+                    <div class="container">            
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                
+                           <p align="left">
+                         <p align="justify">
+                             <h3>Reseña: </h3><hr> 
+                           </p>
+                           <br>
+                           <h4>
+                           <p align="justify">
+                           El programador puede escribir funciones definidas por el mismo, estas son llamadas 'definidas por el programador'.<br>Las instrucciones reales que definen las funciones se escriben solamente una vez, y estan ocultas a las demás funciones.<br>Se invocan mediante la 'llamada a una función', la cual especifica el nombre de la función y proporciona información (como argumentos) que la función invocada necesita para llevar a cabo su tarea.
+                           </p>
+                           <br> 
+                           <br>                      
+                           <h3>Declaración de funciones</h3><hr> 
+                           <p align="justify">
+                           Antes de empezar a utilizar una función debemos declararla.<br> La declaración de una función
+se conoce también como prototipo de la función. En el prototipo de una función
+se tienen que especificar los parámetros de la función, así como el tipo de dato que
+devuelve.<br><br>
+Los prototipos de las funciones que se utilizan en un programa se incluyen generalmente
+en la cabecera del programa y presentan la siguiente sintaxis:<br><br>
+tipo_de_retorno nombre_de_la_función(lista_de_parámetros);<br><br>
+En el prototipo de una función no se especifican las sentencias que forman parte de la
+misma, sino sus características.<br><br> Por ejemplo:
+int cubo(int numero);<br><br>
+En este caso se declara la función cubo que recibe como parámetro una variable de tipo
+entero (numero) y devuelve un valor del mismo tipo. En ningún momento estamos especificando
+qué se va a hacer con la variable numero, sólo declaramos las características
+de la función cubo.
+                           </p>
+                           <br>
+                           <br>
+                           <h3>Denificion de funciones </h3><hr> 
+                           <p align="justify">
+                           Tras declarar una función, el siguiente paso es implementarla. Generalmente, este paso
+se conoce como definición.<br> Es precisamente en la definición de una función donde se
+especifican las instrucciones que forman parte de la misma y que se utilizan para llevar
+a cabo la tarea específica de la función.<br> La definición de una función consta de dos partes,
+el encabezado y el cuerpo de la función. En el encabezado de la función, al igual
+que en el prototipo de la misma, se tienen que especificar los parámetros de la función,
+si los utiliza y el tipo de datos que devuelve, mientras que el cuerpo se compone de las
+instrucciones necesarias para realizar la tarea para la cual se crea la función.<br> La sintaxis
+de la definición de una función es la siguiente:<br><br>
+tipo_de_retorno nombre_de_la_función(lista_de_parámetros)
+{
+sentencias;
+}<br><br>
+El tipo_de_retorno representa el tipo de dato del valor que devuelve la función. Este
+tipo debe ser uno de los tipos simples de C, un puntero a un tipo de C o bien un tipo
+struct. De forma predeterminada, se considera que toda función devuelve un tipo entero
+(int). En otras palabras, si en la declaración o en la definición de una función no se
+especifica el tipo_de_retorno, el compilador asume que devuelve un valor de tipo int.<br><br>
+El nombre_de_la_función representa el nombre que se le asigna a la función.
+Se recomienda que el nombre de la función esté relacionado con la tarea que lleva a
+cabo.<br> En caso de que la función utilice parámetros, éstos deben estar listados entre
+paréntesis a continuación del nombre de la función, especificando el tipo de dato y el
+nombre de cada parámetro.<br><br> En caso de que una función no utilice parámetros, se pueden
+dejar los paréntesis vacíos o incluir la palabra void, que indica que la función no
+utiliza parámetros.<br><br> Después del encabezado de la función, debe aparecer, delimitado
+por llaves ({ y }), el cuerpo de la función compuesto por las sentencias que llevan a
+cabo la tarea específica de la función.<br><br> Veamos la definición de la función cubo declarada
+en el apartado anterior:<br><br>
+int cubo(int base)
+{
+int potencia;
+potencia = base * base * base;
+return potencia;
+}               
+</p>
+<br><br>
+<h3>Acceso a una función</h3><hr> 
+<p align="justify">
+Para que una función realice la tarea para la cual fue creada, debemos acceder o llamar
+a la misma.<br> Cuando se llama a una función dentro de una expresión, el control del programa se pasa a ésta y sólo regresa a la siguiente expresión de la que ha realizado la llamada cuando encuentra una instrucción return o, en su defecto, la llave de cierre al final
+de la función.<br>
+Generalmente, se suele llamar a las funciones desde la función main, lo que no implica que dentro de una función se pueda acceder a otra función.
+<br>Debemos recordar que los argumentos que utilizamos en la llamada a una función se
+denominan argumentos reales. Estos argumentos deben coincidir en el número y tipo
+con los argumentos formales o parámetros de la función.
+<br><br>
+<h3>Variables locales y globales</h3><hr> 
+Variable local: Cualquier variable que declaremos dentro de una función, es local a esa función, es decir, su ámbito esta
+confinado a dicha función.<br>
+Variable global: Cualquier variable que este declarada fuera de una función y es perteneciente a todo el programa, es decir que todo el programa puede conocer sus datos. 
+</p>
+                           </h4>  
+                                                                                              
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <br>
+                    <div align="center">
+                    <br><br>                  
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>                
+                    <img height="200px" width="600px" src="img/img7.jpg">                    
+                    <p align="center">Declaración de una función</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br> 
+                    <img height="200px" width="400px" src="img/img8.jpg">
+                    <img height="200px" width="400px" src="img/img9.jpg">
+                    <p align="center">Definición de una función</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>  
+                    <img height="200px" width="400px" src="img/img10.jpg">
+                    <p align="center">Acceso a una función</p>
+                    <br><br>
+                    <br><br> 
+                    <img height="400px" width="600px" src="img/img11.jpg">
+                    <p align="center">Ejemplo de funciones</p>  
+                    </div>                  
+                    </div>
+
+
+<div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                           <button type="button" class="btn btn-warning" id="esconder1">Volver arriba</button>
+              </div>
+            </div>
+          </div>
+
+                  </div>
+                </div>  
+              </div>
+
+
+
+        <br>
+        <footer class="footercolor">
+        <div class="container"><br>
+            <img src="img/logo.png" width="75" height="50" alt="Logo" /> | © Todos los derechos reservados.        
+                      
+          </br></div>
+        </footer>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="jQuery2.1.js"></script>
+
+        <script>
+              $(document).on('ready',function(){          
+                $('#option1').click(function(){
+                  $('#dbu').fadeOut(1000);
+                  $('#pcc').fadeIn(3000);
+                })
+                $('#option2').click(function(){
+                  $('#pcc').fadeOut(1000);
+                  $('#dbu').fadeIn(3000);        
+                })
+                $('#esconder').click(function(){
+                  $('#pcc').fadeOut(1000);
+                  $('#dbu').fadeOut(1000);
+                })
+                $('#esconder1').click(function(){                  
+                  $('#dbu').fadeOut(1000);
+                  $('#pcc').fadeOut(1000);
+                })
+              });
+              </script>
+
+
+        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

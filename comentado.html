@@ -43,7 +43,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand">Inicio</a></div>
+          <a href="index.html" class="navbar-brand">Inicio</a></div>
           
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -62,103 +62,87 @@
         </nav>        
         <br>
         
-       <div class="container">
+        <div class="container">
         <div class="row">
-           <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
-              <section id="miSlide" class="carousel slide">
-               <ol class="carousel-indicators">
-                <li data-target="#miSlide" data-slide-to="0" class="active"></li>
-                <li data-target="#miSlide" data-slide-to="1"></li>
-                <li data-target="#miSlide" data-slide-to="2"></li>
-               </ol>
-              <div class="carousel-inner">
-                <div class="item active">
-                     <img src="img/img1.jpg" class="adaptar">
-                     </div>
-                <div class="item">
-                     <img src="img/img2.jpg" class="adaptar">
-                     </div>
-                <div class="item">
-                     <img src="img/img3.jpg" class="adaptar">
-                     </div>
-                </div>     
-              <a href="#miSlide" class="left carousel-control" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a href="#miSlide" class="right carousel-control" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-              </section>              
-           <br> 
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-            <h3>Sobre la programación</h3><hr>
-                     <p align="justify">
-                       Es el proceso de diseñar, codificar, depurar y mantener el código fuente de programas. 
-                     <br>
-                      <h4>
-                      Para poder programar solo hace falta conocer 3 conceptos:
-                      <br>- Variable
-                      <br>- Condición
-                      <br>- Ciclo
-                      </h4>
-                      <br>Como adicionales tendriamos que comprender:
-                      <br>-Función
-                      <br>-Flujo
-                     </p>
-          </div>
+        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
+        <pre>
+
+        <b>/*PROGRAMA QUE RESUELTE LA SUMATORIA DE i=1 HASTA n=X DE i^i/i!*/</b>
+        // En esta parte se declaran las bibliotecas que se van autilizar
+#include< stdio.h >//Biblioteca que activa la entrada y salida de datos
+#include< math.h >//Biblioteca que contiene las funciones matematicas preempacadas
+
+//Aqui se declaran las funciones a implementar
+void set();//Funcion que envia el valor final
+int potencia(int a);//Funcion que calcula la potencia del numero elevado a ese mismo numero
+int factorial(int pNumero);//Funcion que calcula el factorial de un numero
+
+/*Aqui se declara la variable global final que guarda
+el valor final de la serie*/
+int final;
+
+//Aqui se define el programa principal 
+int main(){
+       float suma_total=0;//Declararcion y asignacion del acumulador de la suma total de la operacion
+       int n;//Esta variable funge como una copia del valor final
+       set();//Se llama a la funcion de ingreso de datos
+       n=final;//Se le asigna el valor de final a n para igualarlas
+       float cociente;//Esta variable guardara el valor del coicente de ii/i!       
+       
+       /*Se inicializa el ciclo do-while*/
+       
+       do{                    
+       float pot=potencia(n);//Se declara pot y se le asigna el valor que regresa la funcion potencia 
+       float fac=factorial(n);//Se declara fac y se le asigna el valor que regresa la funcion factorial        
+       cociente=pot/fac;//Se le asigna a la variable cociente el cociente de pot/fac       
+       
+       
+       /*
+       
+        Lineas de apoyo para saber si el programa funciona correctamente
+       //printf("\nEl valor de potencia es %.2f",pot);
+       //printf("\nEl valor de factorial es %.2f",fac);       
+       //printf("\nEl valor del cociente hasta ahora es: %.2f",cociente);
+       */
+       
+       suma_total=suma_total+cociente;//Se va acumulando el valor de la suma de los cocientes
+       
+       //printf("\nEl valor de n es: %d",n);
+       
+       n=n-1;//Se decrementa el valor  de la variable n que corresponde al valor de final para que el ciclo regrese
+       
+       //printf("\nEl valor de n es: %d",n);
+         }while(n>=1);//Se da la condicion para que el ciclo se siga ejecutando
+       printf("\nEl valor total es: %.2f\n",suma_total);//Se imprime el valor del total de la sumatoria 
+       return 0;//Indica terminacion exitosa del programa
+      }
+
+//FUNCIONES
+
+/*Funcion vacia (proceso) que indica que se debe de ingresar el valor final de la serie*/
+void set(){
+     printf("\nDigite el valor final: ");
+     scanf("%d",&final);
+          }         
+
+/*Funcion entera que regresa el valor de el numero x elevado a ese mismo numero
+con ayuda de la funcion preempacada de math.h pow() que sirve para elevar un numero a x exponente*/          
+int potencia(int a){
+             a=pow(a,a);
+             return a; 
+                   }
+                   
+/*Funcion entera recursiva que regresa el valor del factorial de un numero*/                   
+int factorial(int pNumero){
+if(pNumero>1)
+return pNumero*factorial(pNumero-1);
+return 1;
+}
+
+        </pre>  
         </div>
-       </div>         
-
-       <div class="container">
-           <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-               <h3>¿Qué son estos conceptos?</h3><hr>
-                <p align="justify">
-                <h4><br>-Variable: </h4>Es algo que cambia constantemente, es la cajita donde podemos almacenar datos.
-                <h4><br>-Condición: </h4>Es la evaluacion de los datos. 
-                <h4><br>-Ciclo: </h4>Indica cuantas veces se va a repetir cierto proceso, algo que es repetitivo o se realiza siempre y cuando algo siga pasando o deje de pasar.
-                <h4><br>-Función: </h4>Es un conjunto de operaciones matematicas, de secuencias de procesos, etc.
-                <h4><br>-Flujo: </h4>Es el camino por el cual seguira el programa esta apoyado por las condiciones y los ciclos.
-                </p>          
-             </div>
-           </div>
-         </div> 
-         <br>
-         <div class="container">
-           <div class="row">
-             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-             <h3>¿Qué necesito para ser un programador?</h3><hr>
-             <ol>
-             <h4>
-             <li>Pensamiento lógico</li>
-             <li>Interés por el orden</li>
-             <li>Constancia</li>
-             <li>Capacidad de atención y concentración</li>
-             <li>Innovación</li>             
-             </h4>
-             </ol>
-             </div>
-             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-             <div align="center"><img src="img/img4.jpg" align="center" height="200px" width="300px"></div>
-             </div>
-             </div>
-             </div>
-          <div class="container">
-              <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                 <div align="center">              
-                 <p align="center"> 
-                 <h2>
-                 ¡¡ NO ESPERES QUE TODO TE LO DE EL PROFESOR !!            
-                 </h2>
-                 </p>
-                 </div>
-                </div>
-              </div>
-            </div>  
-
-
+        </div>
+        </div>
 
         <br>
         <footer class="footercolor">
